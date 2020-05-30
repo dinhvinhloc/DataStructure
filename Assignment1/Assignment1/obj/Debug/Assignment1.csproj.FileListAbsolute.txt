@@ -1,0 +1,10 @@
+C:\DataStructure\Assignment1\Assignment1\obj\Debug\Assignment1.csprojAssemblyReference.cache
+C:\DataStructure\Assignment1\Assignment1\obj\Debug\Assignment1.frmMain.resources
+C:\DataStructure\Assignment1\Assignment1\obj\Debug\Assignment1.Properties.Resources.resources
+C:\DataStructure\Assignment1\Assignment1\obj\Debug\Assignment1.csproj.GenerateResource.cache
+C:\DataStructure\Assignment1\Assignment1\obj\Debug\Assignment1.csproj.CoreCompileInputs.cache
+C:\DataStructure\Assignment1\Assignment1\bin\Debug\Assignment1.exe.config
+C:\DataStructure\Assignment1\Assignment1\bin\Debug\Assignment1.exe
+C:\DataStructure\Assignment1\Assignment1\bin\Debug\Assignment1.pdb
+C:\DataStructure\Assignment1\Assignment1\obj\Debug\Assignment1.exe
+C:\DataStructure\Assignment1\Assignment1\obj\Debug\Assignment1.pdb
