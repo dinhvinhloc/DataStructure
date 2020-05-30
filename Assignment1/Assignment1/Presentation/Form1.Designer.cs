@@ -92,8 +92,9 @@
             this.dataGridStudent.Name = "dataGridStudent";
             this.dataGridStudent.RowHeadersWidth = 82;
             this.dataGridStudent.RowTemplate.Height = 33;
-            this.dataGridStudent.Size = new System.Drawing.Size(744, 266);
+            this.dataGridStudent.Size = new System.Drawing.Size(992, 266);
             this.dataGridStudent.TabIndex = 4;
+            this.dataGridStudent.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridStudent_CellClick);
             // 
             // btnAdd
             // 
@@ -123,6 +124,8 @@
             this.txtAssignmentScore.Name = "txtAssignmentScore";
             this.txtAssignmentScore.Size = new System.Drawing.Size(314, 35);
             this.txtAssignmentScore.TabIndex = 10;
+            this.txtAssignmentScore.TextChanged += new System.EventHandler(this.txtAssignmentScore_TextChanged);
+            this.txtAssignmentScore.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAssignmentScore_KeyPress);
             // 
             // labelScore
             // 
@@ -161,7 +164,7 @@
             this.dataGridAssignment.Name = "dataGridAssignment";
             this.dataGridAssignment.RowHeadersWidth = 82;
             this.dataGridAssignment.RowTemplate.Height = 33;
-            this.dataGridAssignment.Size = new System.Drawing.Size(743, 242);
+            this.dataGridAssignment.Size = new System.Drawing.Size(992, 242);
             this.dataGridAssignment.TabIndex = 11;
             // 
             // btnAddAssignment
@@ -197,7 +200,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1321, 707);
+            this.ClientSize = new System.Drawing.Size(1559, 707);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.labelID);
             this.Controls.Add(this.btnAddAssignment);

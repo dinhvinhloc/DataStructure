@@ -12,6 +12,12 @@ namespace Assignment1.Business
         private double score;
         public const double maxScore = 100;
 
+        public Assignment(string assignmentID, double score)
+        {
+            this.assignmentID = assignmentID;
+            this.score = score;
+        }
+
         public string AssignmentID { get => assignmentID; set => assignmentID = value; }
         public double Score { get => score; set => score = value; }
                

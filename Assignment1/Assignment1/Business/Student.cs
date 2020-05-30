@@ -69,9 +69,9 @@ namespace Assignment1.Business
         public void SetObtainedScored()
         {
             double score = 0;
-            for (int i = 0; i <= assignmentList.Count; i++)
+            for (int i = 0; i < assignmentList.Count; i++)
             {
-                score = assignmentList.ElementAt(1).Score;
+                score = score + assignmentList.ElementAt(i).Score;
             }
             this.obtainedScore = score;
         }

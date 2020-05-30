@@ -11,22 +11,24 @@ namespace Assignment1.Data
     {
         private List<Student> studentList = new List<Student>();
 
+        public List<Student> StudentList { get => studentList; set => studentList = value; }
+
         public bool AddStudent(Student student)
         {
-            if (studentList.Contains(student))
+            if (StudentList.Contains(student))
                 return false;
             else
             {
-                studentList.Add(student);
+                StudentList.Add(student);
                 return true;
             }
         }
 
         public bool RemoveStudent(Student student)
         {
-            if (studentList.Contains(student))
+            if (StudentList.Contains(student))
             {
-                studentList.Remove(student);
+                StudentList.Remove(student);
                 return true;
             }
             else return false;
@@ -34,7 +36,7 @@ namespace Assignment1.Data
 
         public List<Student> GetStudents()
         {
-            return studentList;
+            return StudentList;
         }
     }
 }
