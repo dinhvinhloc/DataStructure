@@ -12,47 +12,61 @@ namespace Assignment1.Business
         private string studentID;        
         private string studentName;
         private double obtainedScore;
-        private double maxScore;
+        private double totalMaxScore;
         private List<Assignment> assignmentList;
-
+        public Student()
+                {
+                }
         public Student(string studentID, string studentName)
         {
             this.StudentID = studentID;
             this.StudentName = studentName;
             this.ObtainedScore = 0;
-            this.MaxScore = 0;
-            this.assignmentList = new List<Assignment>();
+            this.TotalMaxScore = 0;
+            this.AssignmentList = new List<Assignment>();
         }
+
+        
 
         public string StudentID { get => studentID; set => studentID = value; }
         public string StudentName { get => studentName; set => studentName = value; }
         public double ObtainedScore { get => obtainedScore; set => obtainedScore = value; }
-        public double MaxScore { get => maxScore; set => maxScore = value; }
+        public double TotalMaxScore { get => totalMaxScore; set => totalMaxScore = value; }
+        public List<Assignment> AssignmentList { get => assignmentList; set => assignmentList = value; }
 
         public bool AddAssignment(Assignment assignment)
         {
-            if (assignmentList.Contains(assignment))
+            if (AssignmentList.Contains(assignment))
             {
-                assignmentList.Remove(assignment);
-                assignmentList.Add(assignment);
+
+                Assignment tempAssignment = AssignmentList.Find(x => x.Equals(assignment));
+                tempAssignment.Score = assignment.Score;
                 SetMaxScored();
                 SetObtainedScored();
                 return false;
             }
             else
             {
-                assignmentList.Add(assignment);
+                AssignmentList.Add(assignment);
                 SetMaxScored();
                 SetObtainedScored();
                 return true;
             }
         }
 
+        public bool FindAssignment(Assignment assignment)
+        {
+            if (AssignmentList.Contains(assignment))
+                return true;
+            else
+                return false;            
+        }
+
         public bool RemoveAssignment(Assignment assignment)
         {
-            if (assignmentList.Contains(assignment))
+            if (AssignmentList.Contains(assignment))
             {
-                assignmentList.Remove(assignment);
+                AssignmentList.Remove(assignment);
                 SetMaxScored();
                 SetObtainedScored();
                 return true;
@@ -63,15 +77,15 @@ namespace Assignment1.Business
         
         public void SetMaxScored()
         {
-            this.MaxScore = assignmentList.Count * Assignment.maxScore;
+            this.TotalMaxScore = AssignmentList.Count * Assignment.maxScore;
         }
 
         public void SetObtainedScored()
         {
             double score = 0;
-            for (int i = 0; i < assignmentList.Count; i++)
+            for (int i = 0; i < AssignmentList.Count; i++)
             {
-                score = score + assignmentList.ElementAt(i).Score;
+                score = score + AssignmentList.ElementAt(i).Score;
             }
             this.obtainedScore = score;
         }
@@ -92,7 +106,7 @@ namespace Assignment1.Business
 
         public List<Assignment> GetAssignments()
         {
-            return assignmentList;
+            return AssignmentList;
         }
 
     }
