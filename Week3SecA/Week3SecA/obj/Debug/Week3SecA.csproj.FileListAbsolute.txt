@@ -1,0 +1,10 @@
+C:\DataStructure\Week3SecA\Week3SecA\obj\Debug\Week3SecA.csprojAssemblyReference.cache
+C:\DataStructure\Week3SecA\Week3SecA\obj\Debug\Week3SecA.Form1.resources
+C:\DataStructure\Week3SecA\Week3SecA\obj\Debug\Week3SecA.Properties.Resources.resources
+C:\DataStructure\Week3SecA\Week3SecA\obj\Debug\Week3SecA.csproj.GenerateResource.cache
+C:\DataStructure\Week3SecA\Week3SecA\obj\Debug\Week3SecA.csproj.CoreCompileInputs.cache
+C:\DataStructure\Week3SecA\Week3SecA\bin\Debug\Week3SecA.exe.config
+C:\DataStructure\Week3SecA\Week3SecA\bin\Debug\Week3SecA.exe
+C:\DataStructure\Week3SecA\Week3SecA\bin\Debug\Week3SecA.pdb
+C:\DataStructure\Week3SecA\Week3SecA\obj\Debug\Week3SecA.exe
+C:\DataStructure\Week3SecA\Week3SecA\obj\Debug\Week3SecA.pdb
